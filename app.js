@@ -9,10 +9,10 @@ const cors = require("cors");
 const xss = require("xss-clean");
 const rateLimiter = require("express-rate-limit");
 
-// swagger
-const swaggerUi = require("swagger-ui-express");
-const yaml = require("yamljs");
-const swaggerDocument = yaml.load("./swagger.yaml");
+// // swagger
+// const swaggerUi = require("swagger-ui-express");
+// const YAML = require("yamljs");
+// const swaggerDocument = YAML.load("./swagger.yaml");
 
 // db
 const connectDB = require("./db/connect");
