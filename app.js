@@ -47,7 +47,7 @@ app.get("/", (req, res) => {
     res.send('<h1>jobs api page</h1><a href="/api-docs">Docmentation</a>');
 });
 
-app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+// app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.use("/api/v1/jobs", authinticateUser, jobsRouter);
 app.use("/api/v1/auth", authRouter);
