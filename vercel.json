@@ -1,4 +1,3 @@
-
 {
     "version": 2,
     "builds": [
@@ -12,5 +11,8 @@
             "src": "/(.*)",
             "dest": "app.js"
         }
-    ]
+    ],
+    "build": {
+        "includeFiles": ["swagger.yaml"]
+    }
 }
