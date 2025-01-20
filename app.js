@@ -40,6 +40,9 @@ app.use(xss());
 app.get("/", (req, res) => {
     res.send("jobs api");
 });
+app.get("/", (req, res) => {
+    res.status(200).send("yesss");
+});
 app.use("/api/v1/jobs", authinticateUser, jobsRouter);
 app.use("/api/v1/auth", authRouter);
 
