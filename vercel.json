@@ -12,7 +12,5 @@
             "dest": "app.js"
         }
     ],
-    "build": {
-        "includeFiles": ["swagger.yaml"]
-    }
+    "includeFiles": ["swagger.yaml"]
 }
